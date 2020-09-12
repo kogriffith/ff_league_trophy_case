@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  win_count: 1
+  current_winner: false
+
+two:
+  name: MyString
+  win_count: 1
+  current_winner: false
