@@ -1,11 +1,10 @@
 import React from 'react';
-import Dropdown from 'reactstrap'
+import PlayerCard from "./PlayerCard.js"
 
-
-function App() {
+const App = () => {
   return (
     <div className="App">
-     begin
+     <PlayerCard></PlayerCard>
     </div>
   );
 }
