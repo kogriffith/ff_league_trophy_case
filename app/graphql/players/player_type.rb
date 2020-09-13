@@ -1,5 +1,5 @@
 module Players
-  class PlayerType < Types::BaseObject
+  class PlayerType < GraphQL::Schema::Object
 
     field :name, ID, null: false
     field :win_count, Integer, null: false

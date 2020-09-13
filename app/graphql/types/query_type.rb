@@ -1,5 +1,5 @@
 module Types
-  class QueryType < Types::BaseObject
+  class QueryType < GraphQL::Schema::Object
     
     field :test_field, String, null: false,
       description: "An example field added by the generator"
