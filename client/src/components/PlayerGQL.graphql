@@ -1,0 +1,8 @@
+query GetPlayerInfo {
+  player {
+    id
+    name
+    winCount
+    currentWinner
+  }
+}
