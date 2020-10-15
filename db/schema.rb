@@ -10,17 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_12_223839) do
+ActiveRecord::Schema.define(version: 2020_10_15_203418) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "players", force: :cascade do |t|
     t.string "name"
-    t.integer "win_count"
+    t.integer "championship_win_count"
     t.boolean "current_winner"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "nickname"
+    t.integer "playoff_appearance_count"
+    t.integer "playoff_win_count"
+    t.integer "playoff_draw_count"
+    t.integer "playoff_loss_count"
+    t.integer "last_place_count"
+    t.integer "years_in_league"
+    t.integer "regular_win_count"
+    t.integer "regular_draw_count"
+    t.integer "regular_loss_count"
   end
 
 end
