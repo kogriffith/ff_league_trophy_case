@@ -1,17 +1,19 @@
 import React from 'react'
 import {Link, Switch, Route, useRouteMatch} from 'react-router-dom'
-import {Container, Row, Col, Spinner} from 'reactstrap'
+import {Card, CardText, CardBody} from 'reactstrap'
 import PlayerCard from './PlayerCard'
 
 const PlayersListCard = ({player}) => {
   const {path, url} = useRouteMatch();
   return(
     <div>
-     <ul>
-       <li>{player.name}</li>
-       <li><Link to= {`${url}/${player.id}`}>link to player</Link></li>
-     </ul>
-    
+      <Card>
+        <CardBody>
+          <CardText>
+            <h2><Link to= {`${url}/${player.id}`}>{player.name}</Link></h2>
+          </CardText>
+        </CardBody>
+      </Card>
     </div>
   )
 }

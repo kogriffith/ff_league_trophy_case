@@ -1,19 +1,20 @@
 import React from 'react'
 import {Link,Route} from 'react-router-dom'
+import {Navbar, Nav, NavItem, NavLink} from 'reactstrap'
 
-const Navbar = () => (
-<div>
-  <section className = "header">
-    <nav className = "header-nav">
-      
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/players">Degenerates</Link></li>
-        
-      </ul>
-    </nav>
-  </section>
-</div>
+const CustomNavbar = () => (
+  <div>
+    <Navbar>
+      <Nav>
+        <NavItem>
+          <NavLink href="/home">Home</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="/players">Degenerates</NavLink>
+        </NavItem>
+      </Nav>
+    </Navbar>
+  </div>
 );
 
-export default Navbar
+export default CustomNavbar
