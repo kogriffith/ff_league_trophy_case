@@ -25,7 +25,7 @@ const PlayersList = () => {
       ) : (
         <div>
           <h1>Players</h1>
-          <div>
+          <div className="players-list">
             {data.players.map( (player) => <PlayersListCard player = {player}></PlayersListCard>)}
           </div>
         </div>

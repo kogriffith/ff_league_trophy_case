@@ -6,7 +6,7 @@ import PlayerCard from './PlayerCard'
 const PlayersListCard = ({player}) => {
   const {path, url} = useRouteMatch();
   return(
-    <div>
+    <div className="players-list-card">
       <Card>
         <CardBody>
           <CardText>

@@ -5,7 +5,9 @@ import App from './components/App';
 import { ApolloClient, ApolloProvider } from '@apollo/client';
 import { createHttpLink } from 'apollo-link-http';
 import {InMemoryCache} from 'apollo-cache-inmemory'
+import './styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 import * as serviceWorker from './serviceWorker';
 

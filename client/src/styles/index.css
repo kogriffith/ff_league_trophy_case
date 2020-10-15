@@ -14,7 +14,7 @@ code {
 
 
 
-/* CSS Reset 
+ CSS Reset 
 html, body, header, nav, h1, a,
 ul, li, strong, main, button, i,
 section, img, div, h2, p, form,
@@ -51,7 +51,7 @@ textarea,
 button {
   /*
   Get rid of native styling. Read more here:
-  http://css-tricks.com/almanac/properties/a/appearance/
+  http://css-tricks.com/almanac/properties/a/appearance/ */
   
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -63,7 +63,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-*/
+
 
 
 /************* Player ***********/
@@ -72,4 +72,15 @@ input[type="submit"] {
 /***********Home****************/
 
 
-/*********PlayersList**********/
+/* PlayerList*/
+
+.players-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.players-list-card {
+  min-width: 49%;
+  margin-bottom: .5rem;
+}

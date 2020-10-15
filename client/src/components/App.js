@@ -21,9 +21,6 @@ const App = () => {
           <Route path = "/home">
             <Home/>
           </Route>
-          {/*<Route exact path = "/players">
-            <PlayersList></PlayersList>
-          </Route>*/}
           <Route exact path = "/players/:id">
             <PlayerCard></PlayerCard>
           </Route>
