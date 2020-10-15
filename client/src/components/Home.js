@@ -1,5 +1,6 @@
 import React from 'react'
 import {Jumbotron,Container, Col, Row} from 'reactstrap'
+import PlayersList from './PlayersList'
 
 const Home = () => {
 
@@ -13,6 +14,7 @@ const Home = () => {
         </Jumbotron>
         </Col>
       </Row>
+      <PlayersList></PlayersList>
     </div>
   )
 }

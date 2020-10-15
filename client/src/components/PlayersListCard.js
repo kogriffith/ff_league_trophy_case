@@ -10,7 +10,7 @@ const PlayersListCard = ({player}) => {
       <Card>
         <CardBody>
           <CardText>
-            <h2><Link to= {`${url}/${player.id}`}>{player.name}</Link></h2>
+            <h2><Link to= {`/players/${player.id}`}>{player.name}</Link></h2>
           </CardText>
         </CardBody>
       </Card>

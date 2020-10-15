@@ -9,9 +9,6 @@ const CustomNavbar = () => (
         <NavItem>
           <NavLink href="/home">Home</NavLink>
         </NavItem>
-        <NavItem>
-          <NavLink href="/players">Degenerates</NavLink>
-        </NavItem>
       </Nav>
     </Navbar>
   </div>
