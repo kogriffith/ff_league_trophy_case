@@ -24,7 +24,6 @@ const PlayersList = () => {
         <Spinner color="success"></Spinner>  
       ) : (
         <div>
-          <h1>Players</h1>
           <div className="players-list">
             {data.players.map( (player) => <PlayersListCard player = {player}></PlayersListCard>)}
           </div>
