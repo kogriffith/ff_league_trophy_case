@@ -32,7 +32,7 @@ Player.create(name: 'Danny',
               years_in_league: 4,
               regular_win_count: 3,
               regular_draw_count: 0,
-              regular_loss_count: 10))
+              regular_loss_count: 10)
 
 Player.create(name: 'Bijan', 
               championship_win_count: 0, 
@@ -46,7 +46,7 @@ Player.create(name: 'Bijan',
               years_in_league: 2,
               regular_win_count: 7,
               regular_draw_count: 0,
-              regular_loss_count: 6))
+              regular_loss_count: 6)
 
 Player.create(name: 'Forrest', 
               championship_win_count: 0, 
@@ -60,7 +60,7 @@ Player.create(name: 'Forrest',
               years_in_league: 4,
               regular_win_count: 3,
               regular_draw_count: 0,
-              regular_loss_count: 10))
+              regular_loss_count: 10)
 
 Player.create(name: 'Patrick', 
               championship_win_count: 0, 
@@ -74,7 +74,7 @@ Player.create(name: 'Patrick',
               years_in_league: 4,
               regular_win_count: 6,
               regular_draw_count: 0,
-              regular_loss_count: 7))
+              regular_loss_count: 7)
 
 Player.create(name: 'Nathan', 
               championship_win_count: 0, 
@@ -88,7 +88,7 @@ Player.create(name: 'Nathan',
               years_in_league: 4,
               regular_win_count: 5,
               regular_draw_count: 0,
-              regular_loss_count: 8))
+              regular_loss_count: 8)
 
 Player.create(name: 'Slava', 
               championship_win_count: 0, 
@@ -102,7 +102,7 @@ Player.create(name: 'Slava',
               years_in_league: 2,
               regular_win_count: 8,
               regular_draw_count: 0,
-              regular_loss_count: 5))
+              regular_loss_count: 5)
 
 Player.create(name: 'Brandon', 
               championship_win_count: 1, 
@@ -116,21 +116,21 @@ Player.create(name: 'Brandon',
               years_in_league: 4,
               regular_win_count: 11,
               regular_draw_count: 0,
-              regular_loss_count: 2))
+              regular_loss_count: 2)
 
 Player.create(name: 'Parsa', 
               championship_win_count: 1, 
               current_winner: false,
               nickname: "parstoolsports",
               playoff_appearance_count: 1,
-              playoff_win_count: ,
+              playoff_win_count: 0,
               playoff_loss_count: 1,
               playoff_draw_count: 0,
               last_place_count: 0,
               years_in_league: 4,
               regular_win_count: 7,
               regular_draw_count: 0,
-              regular_loss_count: 6))
+              regular_loss_count: 6)
 
 Player.create(name: 'Sam', 
               championship_win_count: 1, 
@@ -144,4 +144,4 @@ Player.create(name: 'Sam',
               years_in_league: 4,
               regular_win_count: 5,
               regular_draw_count: 0,
-              regular_loss_count: 8))
+              regular_loss_count: 8)
