@@ -13,6 +13,7 @@ module Types
 
     field :player, resolver: Players::PlayerResolver
     field :players, resolver: Players::PlayersResolver
+    field :champion, resolver: Players::ChampionResolver
 
   end
 end
