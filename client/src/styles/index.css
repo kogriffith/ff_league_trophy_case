@@ -1,20 +1,4 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
-
- CSS Reset 
+ /*CSS Reset*/ 
 html, body, header, nav, h1, a,
 ul, li, strong, main, button, i,
 section, img, div, h2, p, form,
@@ -58,6 +42,28 @@ button {
   appearance: none;
 }
 
+
+body {
+  margin: 0;
+  font-family: 'Pragati Narrow', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffdc34 !important;
+  background-color: #110133 !important;
+}
+
+a {
+  color: #ffdc34 !important;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+
 button,
 input[type="submit"] {
   cursor: pointer;
@@ -74,13 +80,28 @@ input[type="submit"] {
 
 /* PlayerList*/
 
+.jumbotron {
+  background-color: #00918e !important;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 5rem;
+}
+
 .players-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .players-list-card {
   min-width: 49%;
-  margin-bottom: .5rem;
+  margin-bottom: 1.5rem;
+
 }
+
+.card {
+  border:none !important;
+  background-color: #00918e !important;
+} 
