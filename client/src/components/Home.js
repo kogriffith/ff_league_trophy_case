@@ -2,7 +2,7 @@ import React from 'react'
 import {useQuery, gql} from '@apollo/client'
 import {Jumbotron,Container, Col, Row} from 'reactstrap'
 import PlayersList from './PlayersList'
-import ChampCrownLogo from '../assets/crown.png'
+import ChampCrownLogo from '../assets/champ-crown.png'
 
 const GetChampionInfo = gql `query GetChampionInfo {
   champion{
@@ -29,7 +29,7 @@ const Home = () => {
           <h3>2019 Champion </h3>
          <span className="champion-span">
            <img src={ChampCrownLogo} className="champ-crown-logo"></img>
-           <h3>Brandon "{data.champion.nickname}" Martinez</h3>
+           <h3>Team {data.champion.nickname}</h3>
            <img src={ChampCrownLogo} className="champ-crown-logo"></img>
         </span> 
         </Jumbotron>

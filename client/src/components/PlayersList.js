@@ -9,15 +9,24 @@ const GetPlayersInfo = gql `query GetPlayersInfo {
   players{
     id
     name
-    winCount
+    championshipWinCount
     currentWinner
+    nickname
+    playoffAppearanceCount
+    playoffWinCount
+    playoffLossCount
+    playoffDrawCount
+    lastPlaceCount
+    yearsInLeague
+    regularWinCount
+    regularDrawCount
+    regularLossCount
   }
 }`;
 
 const PlayersList = () => {
   const {data, loading, refetch} = useQuery(GetPlayersInfo);
 
-  //loading ? console.log("still loading") : console.log(data.players);
   return(
     <div>
       {loading ? (

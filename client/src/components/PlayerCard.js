@@ -7,7 +7,7 @@ const GetPlayerInfo = gql `query GetPlayerInfo($id: ID!) {
   player(id: $id){
     id
     name
-    winCount
+    championshipWinCount
     currentWinner
   }
 }`;
@@ -34,7 +34,7 @@ const PlayerCard = () => {
           </Row>
           <Row>
             <Col>
-            <span>{data.player.winCount}</span>
+            <span>{data.player.championshipWinCount}</span>
             </Col>
           </Row>
         </Container>
