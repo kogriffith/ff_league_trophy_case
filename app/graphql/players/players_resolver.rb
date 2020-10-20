@@ -4,7 +4,7 @@ module Players
     type [PlayerType], null: false
 
     def resolve()
-      Player.all
+      Player.order(regular_win_count: :desc)
     end
 
   end
