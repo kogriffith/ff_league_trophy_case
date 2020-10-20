@@ -105,3 +105,13 @@ input[type="submit"] {
   border:none !important;
   background-color: #00918e !important;
 } 
+
+.champion-span {
+  display: flex;
+  flex-direction: row;
+}
+
+.champ-crown-logo {
+  max-height: 65px;
+  max-width: 65px;
+}
