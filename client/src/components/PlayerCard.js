@@ -1,7 +1,9 @@
 import React from 'react'
 import {useQuery, gql} from '@apollo/client'
 import {useParams} from 'react-router-dom'
-import {Container, Row, Col, Spinner} from 'reactstrap'
+import { Row, Col, Spinner, Table} from 'reactstrap'
+import PlayerTable from './PlayerTable.js'
+
 
 const GetPlayerInfo = gql `query GetPlayerInfo($id: ID!) {
   player(id: $id){
@@ -9,6 +11,16 @@ const GetPlayerInfo = gql `query GetPlayerInfo($id: ID!) {
     name
     championshipWinCount
     currentWinner
+    nickname
+    playoffAppearanceCount
+    playoffWinCount
+    playoffLossCount
+    playoffDrawCount
+    lastPlaceCount
+    yearsInLeague
+    regularWinCount
+    regularDrawCount
+    regularLossCount
   }
 }`;
 
@@ -25,19 +37,14 @@ const PlayerCard = () => {
       {loading ? (
         <div>
         </div>  
-      ) : (
-        <Container>
-          <Row>
-            <Col>
-              <h1>{data.player.name}</h1>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-            <span>{data.player.championshipWinCount}</span>
-            </Col>
-          </Row>
-        </Container>
+      ) : (    
+        <Row>
+          <Col>
+            <h1>{data.player.nickname}</h1>
+            <h4 className = "player-record">Regular Season Record: {data.player.regularWinCount} - {data.player.regularLossCount} - {data.player.regularDrawCount} </h4>
+            <PlayerTable data={data}></PlayerTable>
+          </Col>
+        </Row> 
       )
        }
     </div>
