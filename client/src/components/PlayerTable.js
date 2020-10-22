@@ -11,14 +11,16 @@ const PlayerTable = ({data}) => {
   
   console.log(data.player.lastPlaceCount)
   return(
-   <Table>
+   <Table className="player-table">
     <tbody>
       <tr>
         <td>
           <h4>Championships</h4>
         </td>
         <td>
-          <span className="icon-span">{Array(data.player.championshipWinCount).fill(<img src={Crown} className="crown-icon"></img>)}</span>
+          { data.player.championshipWinCount === 0 ? 
+          (<span className="icon-span"><img src={Zero} className="crown-icon"></img></span>)  : 
+          (<span className="icon-span">{Array(data.player.championshipWinCount).fill(<img src={Crown} className="crown-icon"></img>)}</span>)}
         </td>
       </tr>
       <tr>
@@ -26,7 +28,9 @@ const PlayerTable = ({data}) => {
           <h4>Playoff Appearances</h4>
         </td>
         <td>
-          <span className="icon-span">{Array(data.player.playoffAppearanceCount).fill(<img src={Star} className="crown-icon"></img>)}</span>
+          { data.player.playoffAppearanceCount === 0 ? 
+          (<span className="icon-span"><img src={Zero} className="crown-icon"></img></span>)  : 
+          (<span className="icon-span">{Array(data.player.playoffAppearanceCount).fill(<img src={Star} className="crown-icon"></img>)}</span>)}
         </td>
       </tr>
       <tr>
@@ -34,7 +38,9 @@ const PlayerTable = ({data}) => {
           <h4>Playoff Wins</h4>
         </td>
         <td>
-          <span className="icon-span">{Array(data.player.playoffWinCount).fill(<img src={Ball} className="crown-icon"></img>)}</span>
+          { data.player.playoffWinCount === 0 ? 
+          (<span className="icon-span"><img src={Zero} className="crown-icon"></img></span>)  : 
+          (<span className="icon-span">{Array(data.player.playoffWinCount).fill(<img src={Ball} className="crown-icon"></img>)}</span>)}
         </td>
       </tr>
       <tr>
@@ -42,7 +48,9 @@ const PlayerTable = ({data}) => {
           <h4>Playoff Losses</h4>
         </td>
         <td>
-          <span className="icon-span">{Array(data.player.playoffLossCount).fill(<img src={X} className="crown-icon"></img>)}</span>
+          { data.player.playoffLossCount === 0 ? 
+          (<span className="icon-span"><img src={Zero} className="crown-icon"></img></span>)  : 
+          (<span className="icon-span">{Array(data.player.playoffLossCount).fill(<img src={X} className="crown-icon"></img>)}</span>)}
         </td>
       </tr>
       <tr>
