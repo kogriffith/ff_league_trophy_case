@@ -13,7 +13,7 @@ const PlayersListCard = ({player}) => {
           <CardBody>
             <div>
             <h3>{player.nickname}</h3>
-            <h4 className = "player-record">{player.regularWinCount} - {player.regularDrawCount} - {player.regularLossCount} </h4>
+            <h4 className = "player-record">{player.regularWinCount} - {player.regularLossCount} - {player.regularDrawCount} </h4>
             </div>
             <span>{Array(player.championshipWinCount).fill(<img src={Crown} className="crown-icon"></img>)}</span>
           </CardBody>
