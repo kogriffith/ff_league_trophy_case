@@ -3,6 +3,7 @@ import {useQuery, gql} from '@apollo/client'
 import {Jumbotron,Container, Col, Row} from 'reactstrap'
 import PlayersList from './PlayersList'
 import ChampCrownLogo from '../assets/champ-crown.png'
+import Footer from './Footer.js'
 
 const GetChampionInfo = gql `query GetChampionInfo {
   champion{

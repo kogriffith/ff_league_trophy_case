@@ -10,6 +10,7 @@ import Home from "./Home.js"
 import CustomNavbar from "./Navbar.js"
 import PlayersList from "./PlayersList"
 import {Container} from 'reactstrap'
+import Footer from './Footer.js';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           </Route>
         </Switch>
         </Container>
+        <Footer></Footer>
     </div>
   );
 }

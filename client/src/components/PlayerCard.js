@@ -41,7 +41,8 @@ const PlayerCard = () => {
         <Row>
           <Col>
             <h1>{data.player.nickname}</h1>
-            <h4 className = "player-record">Regular Season Record: {data.player.regularWinCount} - {data.player.regularLossCount} - {data.player.regularDrawCount} </h4>
+            <h4>{data.player.yearsInLeague} Year Degenerate</h4>
+            <h4 className = "player-record">Regular Season Record: {data.player.regularWinCount} - {data.player.regularLossCount} - {data.player.regularDrawCount} (since 2019)</h4>
             <PlayerTable data={data}></PlayerTable>
           </Col>
         </Row> 

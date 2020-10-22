@@ -55,7 +55,7 @@ const PlayerTable = ({data}) => {
       </tr>
       <tr>
         <td>
-          <h4>Last Place Appearances</h4>
+          <h4>Last Place Finishes</h4>
         </td>
         <td>
           { data.player.lastPlaceCount === 0 ? 
