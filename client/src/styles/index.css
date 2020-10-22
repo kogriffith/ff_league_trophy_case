@@ -1,7 +1,8 @@
  /*CSS Reset*/ 
+
 html, body, header, nav, h1, a,
 ul, li, strong, main, button, i,
-section, img, div, h2, p, form,
+section, img, div, h2, h3, h4, p, form,
 fieldset, label, input, textarea,
 span, article, footer, time, small {
   margin: 0;
@@ -42,7 +43,6 @@ button {
   appearance: none;
 }
 
-
 body {
   margin: 0;
   font-family: 'Pragati Narrow', sans-serif !important;
@@ -60,25 +60,16 @@ code {
     monospace;
 }
 
-
-
-
-
 button,
 input[type="submit"] {
   cursor: pointer;
 }
-
-
-
-
-/************* Player ***********/
-
+/*Navbar*/
+.navbar-home-link {
+  font-size: 2rem;
+}
 
 /***********Home****************/
-
-
-
 
 .jumbotron {
   background-color: #00918e !important;
@@ -135,10 +126,29 @@ input[type="submit"] {
 }
 
 .players-list-card :hover {
-  background-color: #4dd599;
+  background-color: #0278ae;
   border-radius: 5px;
   text-decoration: none;
 }
 .player-record {
  
+}
+
+/* PlayerCard */
+.icon-span {
+  display: inline-flex;
+}
+
+/* PlayerTable */
+
+.player-table {
+  margin-top: 2rem;
+}
+
+.player-table h4 {
+  color: #ffdc34 !important;
+}
+
+.player-table td {
+  padding-left: 0 !important;
 }

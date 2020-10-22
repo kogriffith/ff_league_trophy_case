@@ -7,7 +7,7 @@ const CustomNavbar = () => (
     <Navbar>
       <Nav>
         <NavItem>
-          <NavLink href="/home">Home</NavLink>
+          <NavLink href="/home" className="navbar-home-link">Home</NavLink>
         </NavItem>
       </Nav>
     </Navbar>
