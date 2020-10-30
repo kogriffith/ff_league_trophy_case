@@ -1,24 +1,5 @@
-# README
+# Fantasy Football League Trophy Case App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Web app built using Rails, Apollo, GQL, React and postgresql. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I felt the tracking of each player's stats in the Sleeper and ESPN fantasy football were lacking, so I built this to show a simple, graphically straightforward representation of the current league champion and each player's relevant statistics.
